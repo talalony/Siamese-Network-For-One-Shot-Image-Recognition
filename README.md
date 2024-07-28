@@ -48,6 +48,6 @@ python main.py --test "path/to/images_evaluation"
 
 Loss value is recorded after each epoch
 
-![Figure_1](https://github.com/user-attachments/assets/197d6ed8-7336-4d9b-9463-2e6702243657)
+![Figure_1](https://github.com/user-attachments/assets/be3f5bda-da93-45e3-93fe-9d15b363971f)
 
-The model achieved an accuracy of 87.8% on the test set. This accuracy is slightly lower than that reported in the original article, likely due to the changes I mentioned.
+The model achieved an accuracy of 92% on the test set. This accuracy is slightly lower than that reported in the original article, likely due to the changes I mentioned.
