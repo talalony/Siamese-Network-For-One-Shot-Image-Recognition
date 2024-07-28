@@ -69,7 +69,7 @@ def test(data_path, model, device):
     same = 0
     for image1, image2, label in dataloader:
         image1, image2, label = image1.to(device), image2.to(device), label.to(device)
-        output = model(image1, image2, training=True)
+        output = model(image1, image2)
 
         pred = 0
         if output.item() > 0.5:
