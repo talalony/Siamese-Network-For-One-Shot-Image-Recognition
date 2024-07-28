@@ -42,7 +42,7 @@ def main():
         plt.show()
 
     if args.test:
-        model.load_state_dict(torch.load("model_final.pth", map_location=device))
+        model.load_state_dict(torch.load("model_omniglot_final.pth", map_location=device))
         test(args.test, model, device)
 
 
