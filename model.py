@@ -33,12 +33,6 @@ class SiameseVerifier(nn.Module):
         self.fc1 = nn.Linear(256 * image_size * image_size, 4096)
         self.fc2 = nn.Linear(4096, 1)
 
-        # for m in self.modules():
-        #     if isinstance(m, nn.Conv2d):
-        #         nn.init.kaiming_uniform_(m.weight)
-        #     elif isinstance(m, nn.Linear):
-        #         nn.init.xavier_uniform_(m.weight)
-
         for m in self.modules():
             if isinstance(m, nn.Conv2d):
                 nn.init.normal_(m.weight, mean=0.0, std=1e-2)
