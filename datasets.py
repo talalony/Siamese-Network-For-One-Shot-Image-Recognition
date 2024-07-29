@@ -3,7 +3,7 @@ import random
 
 import torch
 from torch.utils.data import Dataset
-from PIL import Image
+from PIL import Image, UnidentifiedImageError
 
 
 class OmniglotTrainDataset(Dataset):
@@ -32,7 +32,7 @@ class OmniglotTrainDataset(Dataset):
                         file_path = os.path.join(data_path, alpha, char, file)
                         try:
                             data[idx].append(Image.open(file_path).convert('L'))
-                        except:
+                        except UnidentifiedImageError:
                             continue
                         size += 1
                 if not data[idx]:
@@ -93,7 +93,7 @@ class OmniglotTestDataset(Dataset):
                         file_path = os.path.join(data_path, alpha, char, file)
                         try:
                             data[idx].append(Image.open(file_path).convert('L'))
-                        except:
+                        except UnidentifiedImageError:
                             continue
                         size += 1
                 if not data[idx]:
