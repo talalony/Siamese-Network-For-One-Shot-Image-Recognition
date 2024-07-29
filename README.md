@@ -50,4 +50,4 @@ Loss value is recorded after each epoch
 
 ![Figure_1](https://github.com/user-attachments/assets/be3f5bda-da93-45e3-93fe-9d15b363971f)
 
-The model achieved an accuracy of 92% on the test set. This accuracy is slightly lower than that reported in the original article, likely due to the changes I mentioned.
+The model achieved an accuracy of 88% on the test set. This accuracy is slightly lower than that reported in the original article, likely due to the changes I mentioned.
